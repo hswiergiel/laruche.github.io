@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- <header>
+        <nav>
+            <ul>
+                <div class="bannerLi1"> <a href="#banner">
+                        <li>Accueil</li>
+                    </a>
+                    <a href="#hiveSection">
+                        <li>La Promo</li>
+                    </a>
+                </div>
+                <img id="logosite" src="./assets/Logo_p1.png" alt="logo" />
+                <div class="bannerLi2"> <a href="#schoolPresentation">
+                        <li>La Wild</li>
+                    </a>
+                    <a href="#formPart">
+                        <li>Contact</li>
+                    </a>
+                </div>
+
+            </ul>
+        </nav>
+    </header> -->
+
+    <header>
+        <nav>
+            <ul>
+                <div class="menulist">
+                    <div class="closemenu menubutton hidden"> <img id="iconClose" src="./assets/cancel.png"> </div>
+                    <div class="openmenu menubutton hidden"> <img id="iconOpen" src="./assets/menu.png"> </div>
+                    <li class="menuitem"><a href="#banner">
+                            Accueil</a>
+                    </li>
+                    <li class="menuitem">
+                        <a href="#hiveSection">
+                            La Promo</a>
+                    </li>
+                    <img id="logosite" src="./assets/Logo_p1.png" alt="logo" />
+                    <li class="menuitem">
+                        <a href="#schoolPresentation">
+
+                            La Wild</a>
+                    </li>
+                    <li class="menuitem"><a href="#formPart">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner" id="banner">
+        <h1>Bienvenue sur la ruche !</h1>
+        <p class="bannerPresentation">
+            Ce site vous présente la promotion 2022-2023 de la formation développeur web full stack Javascript de la
+            Wild Code School. <br><br>
+            Promenez-vous à travers les alvéoles ou mélangez la ruche pour en découvrir plus !
+        </p>
+    </div>
+
+    <section class="hiveSection" id="hiveSection">
+        <h2> La Ruche </h2>
+        <div class="hive">
+            <button type="button" id="shuffleButton"> Mélanger la ruche</button>
+            <ul id="grid" class="clear">
+                <li>
+                    <div class="hexagon">
+                        <img class="imagehexaLoic blur" src="assets/pictures/loic.png">
+                        <div class="box">
+                            <p class="name">Loic Brassart</p>
+                            <p class="mail"><a href=""><img class="gmailLogo" src="assets/logo/gmail.png"
+                                        alt="gmail"></a> </p>
+                            <p class="linkedin"><a href="" target="_blank"><img class="linkedinLogo"
+                                        src="assets/logo/Linkedin.png" alt="linkedin"></a></p>
+                            <p class="github"><a href="https://github.com/LoicBrassart" target="_blank"><img
+                                        class="gitHubLogo" src="assets/logo/gitHub.png" alt="gitHub"></a></p>
+                            <p class="cv"><a href="" target="_blank"><img class="cvLogo" src="assets/logo/cv.png"
+                                        alt="cv"></a> </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hexagon">
+                        <img class="picture imagehexa blur" src="assets/pictures/priscillia.jpg">
+                        <div class="box">
+                            <p class="name">Priscillia Ammeux</p>
+                            <p class="mail"><a href="mailto:priscillia.ammeux@gmail.fr"><img class="gmailLogo"
+                                        src="assets/logo/gmail.png" alt="gmail"></a> </p>
+                            <p class="linkedin"><a href="https://www.linkedin.com/in/priscillia-ammeux/"
+                                    target="_blank"><img class="linkedinLogo" src="assets/logo/Linkedin.png"
+                                        alt="linkedin"></a></p>
+                            <p class="github"><a href="https://github.com/PriscilliaAmmeux" target="_blank"><img
+                                        class="gitHubLogo" src="assets/logo/gitHub.png" alt="gitHub"></a>
+                            </p>
+                            <p class="cv"><a href="assets/cv/cvPriscillia.pdf" target="_blank"><img class="cvLogo"
+                                        src="assets/logo/cv.png" alt="cv"></a> </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hexagon">
+                        <img class="imagehexa blur" src="assets/pictures/charly.jpg">
+                        <div class="box">
+                            <p class="name">Charly Juteau</p>
+                            <p class="mail"><a href="mailto:charly.juteau4@gmail.com"><img class="gmailLogo"
+                                        src="assets/logo/gmail.png" alt="gmail"></a> </p>
+                            <p class="linkedin"><a href="" target="_blank"><img class="linkedinLogo"
+                                        src="assets/logo/Linkedin.png" alt="linkedin"></a></p>
+                            <p class="github"><a href="https://github.com/CharlyJuteau" target="_blank"><img
+                                        class="gitHubLogo" src="assets/logo/gitHub.png" alt="gitHub"></a> </p>
+                            <p class="cv"><a href="assets/cv/cvCharly.pdf" target="_blank"><img class="cvLogo"
+                                        src="assets/logo/cv.png" alt="cv"></a> </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hexagon">
+                        <img class="picture imagehexa blur" src="assets/pictures/RomainH2.jpg">
+                        <div class="box">
+                            <p class="name">Romain Haddad</p>
+                            <p class="mail"><a href="mailto:romain.haddad@gmail.com"><img class="gmailLogo"
+                                        src="assets/logo/gmail.png" alt="gmail"></a> </p>
+                            <p class="linkedin"><a href="https://www.linkedin.com/in/haddadr/" target="_blank"><img
+                                        class="linkedinLogo" src="assets/logo/Linkedin.png" alt="linkedin"></a></p>
+                            <p class="github"><a href="https://github.com/Azahires" target="_blank"><img
+                                        class="gitHubLogo" src="assets/logo/gitHub.png" alt="gitHub"></a></p>
+                            <p class="cv"><a href="" target="_blank"><img class="cvLogo" src="assets/logo/cv.png"
+                                        alt="cv"></a> </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hexagon">
+                        <img class="picture imagehexaAsma blur" src="assets/pictures/asma.jpeg">
+                        <div class="box">
+                            <p class="name">Asma Touzani</p>
+                            <p class="mail"><a href="mailto:asma.touzani7@gmail.com"><img class="gmailLogo"
+                                        src="assets/logo/gmail.png" alt="gmail"></a> </p>
+                            <p class="linkedin"><a href="" target="_blank"><img class="linkedinLogo"
+                                        src="assets/logo/Linkedin.png" alt="linkedin"></a></p>
+                            <p class="github"><a href="https://github.com/Atouzani7" target="_blank"><img
+                                        class="gitHubLogo" src="assets/logo/gitHub.png" alt="gitHub"></a></p>
+                            <p class="cv"><a href="assets/cv/cvAsma.pdf" target="_blank"><img class="cvLogo"
+                                        src="assets/logo/cv.png" alt="cv"></a> </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hexagon">
+                        <img class="picture imagehexa blur" src="assets/pictures/romainP.jpg">
+                        <div class="box">
+                            <p class="name">Romain Pourchaux</p>
+                            <p class="mail"><a href="mailto:romain.pourchaux@gmail.com"><img class="gmailLogo"
+                                        src="assets/logo/gmail.png" alt="gmail"></a> </p>
+                            <p class="linkedin"><a href="https://www.linkedin.com/in/romain-pourchaux-8322b4113/"
+                                    target="_blank"><img class="linkedinLogo" src="assets/logo/Linkedin.png"
+                                        alt="linkedin"></a></p>
+                            <p class="github"><a href="https://github.com/Fostrankill" target="_blank"><img
+                                        class="gitHubLogo" src="assets/logo/gitHub.png" alt="gitHub"></a></p>
+                            <p class="cv"><a href="" target="_blank"><img class="cvLogo" src="assets/logo/cv.png"
+                                        alt="cv"></a> </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hexagon">
+                        <img class="picture imagehexa blur" src="assets/pictures/florianB.jpg">
+                        <div class="box">
+                            <p class="name">Florian Bouchez</p>
+                            <p class="mail"><a href="mailto:fbouchez.pro@gmail.com"><img class="gmailLogo"
+                                        src="assets/logo/gmail.png" alt="gmail"></a> </p>
+                            <p class="linkedin"><a href="https://www.linkedin.com/in/florian-bouchez-18521b23b/"
+                                    target="_blank"><img class="linkedinLogo" src="assets/logo/Linkedin.png"
+                                        alt="linkedin"></a></p>
+                            <p class="github"><a href="https://github.com/Fbouchezpro" target="_blank"><img
+                                        class="gitHubLogo" src="assets/logo/gitHub.png" alt="gitHub"></a></p>
+                            <p class="cv"><a href="" target="_blank"><img class="cvLogo" src="assets/logo/cv.png"
+                                        alt="cv"></a> </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hexagon">
+                        <img class="picture imagehexa blur" src="assets/pictures/valentin.jpg">
+                        <div class="box">
+                            <p class="name">Valentin Waquet</p>
+                            <p class="mail"><a href="mailto:waquetv@gmail.com"><img class="gmailLogo"
+                                        src="assets/logo/gmail.png" alt="gmail"></a> </p>
+                            <p class="linkedin"><a href="" target="_blank"><img class="linkedinLogo"
+                                        src="assets/logo/Linkedin.png" alt="linkedin"></a></p>
+                            <p class="github"><a href="https://github.com/Sax593" target="_blank"><img
+                                        class="gitHubLogo" src="assets/logo/gitHub.png" alt="gitHub"></a></p>
+                            <p class="cv"><a href="" target="_blank"><img class="cvLogo" src="assets/logo/cv.png"
+                                        alt="cv"></a> </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hexagon">
+                        <img class="picture imagehexaPerrine blur" src="assets\pictures\perrineH.jpg">
+                        <div class="box">
+                            <p class="name">Perrine Huon</p>
+                            <p class="mail"><a href=""><img class="gmailLogo" src="assets/logo/gmail.png" alt="gmail">
+                            </p>
+                            <p class="linkedin"><a href="https://www.linkedin.com/in/perrinehuon" target="_blank"><img
+                                        class="linkedinLogo" src="assets/logo/Linkedin.png" alt="linkedin"></a></p>
+                            <p class="github"><a href="" target="_blank"><img class="gitHubLogo"
+                                        src="assets/logo/gitHub.png" alt="gitHub"></a></p>
+                            <p class="cv"><a href="" target="_blank"><img class="cvLogo" src="assets/logo/cv.png"
+                                        alt="cv"></a></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hexagon">
+                        <img class="imagehexaNedim blur" src="assets\pictures\nedimA.jpeg">
+                        <div class="box">
+                            <p class="name">Nedim Amajoud </p>
+                            <p class="mail"><a href="mailto:amajoudnedim@gmail.com"><img class="gmailLogo"
+                                        src="assets/logo/gmail.png" alt="gmail"></p>
+                            <p class="linkedin"><a href="https://www.linkedin.com/in/n%C3%A9dim-amajoud-322154246/"
+                                    target="_blank"><img class="linkedinLogo" src="assets/logo/Linkedin.png"
+                                        alt="linkedin"></a></p>
+                            <p class="github"><a href="https://github.com/SOA-P" target="_blank"><img class="gitHubLogo"
+                                        src="assets/logo/gitHub.png" alt="gitHub"></a></p>
+                            <p class="cv"><a href="assets\cv\cvnedimA.pdf" target="_blank"><img class="cvLogo"
+                                        src="assets/logo/cv.png" alt="cv"></a></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hexagon">
+                        <img class="picture imagehexaAlexisF blur" src="assets\pictures\alexisF.png">
+                        <div class="box">
+                            <p class="name">Alexis Foulont</p>
+                            <p class="mail"><a href="mailto:alexisfoulont@gmail.com"><img class="gmailLogo"
+                                        src="assets/logo/gmail.png" alt="gmail"></p>
+                            <p class="linkedin"><a href="https://www.linkedin.com/in/alexis-foulont"
+                                    target="_blank"><img class="linkedinLogo" src="assets/logo/Linkedin.png"
+                                        alt="linkedin"></a></p>
+                            <p class="github"><a href="https://github.com/AlexisFLT" target="_blank"><img
+                                        class="gitHubLogo" src="assets/logo/gitHub.png" alt="gitHub"></a></p>
+                            <p class="cv"><a href="assets\cv\cvalexisF.pdf" target="_blank"><img class="cvLogo"
+                                        src="assets/logo/cv.png" alt="cv"></a></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hexagon">
+                        <img class="imagehexaFlorian blur" src="assets\pictures\florianBA.jpg">
+                        <div class="box">
+                            <p class="name">Florian Bartier</p>
+                            <p class="mail"><a href="mailto:florianbartierpro@gmail.com"><img class="gmailLogo"
+                                        src="assets/logo/gmail.png" alt="gmail"></p>
+                            <p class="linkedin"><a href="www.linkedin.com/in/florianbartier" target="_blank"></a><img
+                                    class="linkedinLogo" src="assets/logo/Linkedin.png" alt="linkedin"></p>
+                            <p class="github"><a href="https://github.com/FlorianBartier" target="_blank"></a><img
+                                    class="gitHubLogo" src="assets/logo/gitHub.png" alt="gitHub"></p>
+                            <p class="cv"><a href="assets\cv\cvflorianB.pdf" target="_blank"><img class="cvLogo"
+                                        src="assets/logo/cv.png" alt="cv"></a></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hexagon">
+                        <img class="imagehexaHerve" src="assets\pictures\herveS.jpg">
+                        <div class="box">
+                            <p class="name">Hervé Swiergiel</p>
+                            <p class="mail"><a href="mailto:h.swiergiel@hotmail.fr"><img class="gmailLogo"
+                                        src="assets/logo/gmail.png" alt="gmail"></p>
+                            <p class="linkedin"><a href="https://www.linkedin.com/in/herv%C3%A9-swiergiel-63882352/"
+                                    target="_blank"><img class="linkedinLogo" src="assets/logo/Linkedin.png"
+                                        alt="linkedin"></a></p>
+                            <p class="github"><a href="https://github.com/hswiergiel" target="_blank"><img
+                                        class="gitHubLogo" src="assets/logo/gitHub.png" alt="gitHub"></a></p>
+                            <p class="cv"><a href="assets\cv\cvherveS.pdf" target="_blank"><img class="cvLogo"
+                                        src="assets/logo/cv.png" alt="cv"></a></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hexagon">
+                        <img class="picture imagehexa blur" src="assets\pictures\KevinG.jpg">
+                        <div class="box">
+                            <p class="name">Kévin Gueguen</p>
+                            <p class="mail"><a href="mailto:gueguenk@gmail.com"><img class="gmailLogo"
+                                        src="assets/logo/gmail.png" alt="gmail"></p>
+                            <p class="linkedin"><a href="www.linkedin.com/in/GueguenK" target="_blank"><img
+                                        class="linkedinLogo" src="assets/logo/Linkedin.png" alt="linkedin"></a></p>
+                            <p class="github"><a href="https://github.com/guenk" target="_blank"><img class="gitHubLogo"
+                                        src="assets/logo/gitHub.png" alt="gitHub"></a></p>
+                            <p class="cv"><a href="assets\cv\cvkevinG.pdf" target="_blank"><img class="cvLogo"
+                                        src="assets/logo/cv.png" alt="cv"></a></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hexagon">
+                        <img class="picture imagehexa blur" src="assets\pictures\alexisP.jpeg">
+                        <div class="box">
+                            <p class="name">Alexis Pouril</p>
+                            <p class="mail"><a href="mailto:alexis.pouril@me.com"><img class="gmailLogo"
+                                        src="assets/logo/gmail.png" alt="gmail"></p>
+                            <p class="linkedin"><a href="https://www.linkedin.com/in/alexis-pouril-25b6a390/"
+                                    target="_blank"><img class="linkedinLogo" src="assets/logo/Linkedin.png"
+                                        alt="linkedin"></a></p>
+                            <p class="github"><a href="https://github.com/alexis-Pouril" target="_blank"><img
+                                        class="gitHubLogo" src="assets/logo/gitHub.png" alt="gitHub"></a></p>
+                            <p class="cv"><a href="assets\cv\cvalexisP.pdf" target="_blank"><img class="cvLogo"
+                                        src="assets/logo/cv.png" alt="cv"></a></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hexagon">
+                        <img class="picture imagehexa blur" src="assets/pictures/gerald.jpg">
+                        <div class="box">
+                            <p class="name">Gérald Cartiaux</p>
+                            <p class="mail"><a href="mailto:cartiaux.gerald2@gmail.com"><img class="gmailLogo"
+                                        src="assets/logo/gmail.png" alt="gmail"></p>
+                            <p class="linkedin"><a href="https://www.linkedin.com/in/gerald-cartiaux-a97254251/"
+                                    target="_blank"><img class="linkedinLogo" src="assets/logo/Linkedin.png"
+                                        alt="linkedin"></a></p>
+                            <p class="github"><a href="https://github.com/cartige" target="_blank"><img
+                                        class="gitHubLogo" src="assets/logo/gitHub.png" alt="gitHub"></a></p>
+                            <p class="cv"><a href="" target="_blank"><img class="cvLogo" src="assets/logo/cv.png"
+                                        alt="cv"></a></p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="line"></div>
+
+    <section class="schoolPresentation" id="schoolPresentation">
+        <div class="logo">
+            <img class="wildLogo" src="./assets/wildLogo.png" alt="this is the wild code school logo">
+        </div>
+        <div class="Presentation">
+            <h2>
+                La Wild
+            </h2>
+            <p> La Wild Code School propose des formations intensives aux métiers tech - Développement web, Data
+                analyse,
+                Cybersécurité, Product management - sur nos campus, à distance ou en entreprise.
+            </p>
+        </div>
+    </section>
+
+    <div class="line"></div>
+
+    <section class="formPart" id="formPart">
+        <h2>
+            Contact
+        </h2>
+        <p class="contactPresentation">Vous souhaitez devenir partenaire de la Wild et avoir un appui dans
+            vos recrutements? Contactez-nous!</p>
+        <form class="formPresentation">
+            <input type="name" id="input-name" placeholder="Nom / Prénom">
+            <input type="email" id="input-email" placeholder="Adresse Email">
+            <input type="text" id="company" placeholder="Société">
+            <textarea placeholder="Votre message"></textarea>
+            <button type="submit" id="submitButton" value="Submit">Envoyer</button>
+        </form>
+        <p class="submitionText hiddenmsg">
+            Merci pour votre envoi. Nous reprendrons contact avec vous très prochainement.
+        </p>
+    </section>
+
+    <footer>
+        <img class="bee" src="assets/abeille.png" alt="Abeille">
+        <p class="adress">
+            Wild Code School Lille <br>
+            4 Av. des Saules <br>
+            Bâtiment le Doge <br>
+            59160 Lille<br><br>
+            <em>Ce site est un projet étudiant dans le cadre de la formation développeur web</em>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
