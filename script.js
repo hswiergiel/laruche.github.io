@@ -63,7 +63,6 @@ for (let n = 1; n <= 16; n++) {
                 { opacity: "1" }
             ], 700);
             document.querySelector(`#grid li:nth-child(${n}) .hexagon img`).style.opacity = "1";
-            document.querySelector(`#grid li:nth-child(${n}) .hexagon img`).style.filter = "grayscale(100%)";
             document.querySelector(`#grid li:nth-child(${n}) .hexagon .box`).animate([
                 { opacity: "0.9" },
                 { opacity: "0" }
