@@ -45,7 +45,6 @@ document.querySelector("#submitButton").addEventListener('click', function (even
 for (let n = 1; n <= 16; n++) {
     for (let i = 0; i < document.querySelectorAll(`#grid li:nth-child(${n}) .hexagon p a`).length; i++) {
         document.querySelectorAll(`#grid li:nth-child(${n}) .hexagon p a`)[i].style.pointerEvents = "none";
-        console.log('yo');
     };
 }
 
