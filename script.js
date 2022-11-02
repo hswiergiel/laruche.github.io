@@ -42,11 +42,19 @@ document.querySelector("#submitButton").addEventListener('click', function (even
 });
 
 //alveoles qui se retournent
+for (let n = 1; n <= 16; n++) {
+    for (let i = 0; i < document.querySelectorAll(`#grid li:nth-child(${n}) .hexagon p a`).length; i++) {
+        document.querySelectorAll(`#grid li:nth-child(${n}) .hexagon p a`)[i].style.pointerEvents = "none";
+    };
+}
 
 for (let n = 1; n <= 16; n++) {
     document.querySelector(`#grid li:nth-child(${n})`).addEventListener('click', function () {
         if (document.querySelector(`#grid li:nth-child(${n}) .hexagon img`).style.opacity === "" ||
             document.querySelector(`#grid li:nth-child(${n}) .hexagon img`).style.opacity === "1") {
+            for (let i = 0; i < document.querySelectorAll(`#grid li:nth-child(${n}) .hexagon p a`).length; i++) {
+                document.querySelectorAll(`#grid li:nth-child(${n}) .hexagon p a`)[i].style.pointerEvents = "auto";
+            };
             document.querySelector(`#grid li:nth-child(${n}) .hexagon img`).animate([
                 { opacity: "1" },
                 { opacity: "0.1" }
@@ -58,6 +66,9 @@ for (let n = 1; n <= 16; n++) {
             ], 700);
             document.querySelector(`#grid li:nth-child(${n}) .hexagon .box`).style.opacity = "0.9";
         } else {
+            for (let i = 0; i < document.querySelectorAll(`#grid li:nth-child(${n}) .hexagon p a`).length; i++) {
+                document.querySelectorAll(`#grid li:nth-child(${n}) .hexagon p a`)[i].style.pointerEvents = "none";
+            };
             document.querySelector(`#grid li:nth-child(${n}) .hexagon img`).animate([
                 { opacity: "0.1" },
                 { opacity: "1" }
